@@ -176,31 +176,51 @@
             </div>
         </div>
 
-        <!-- Mobile Menu -->
-        <div x-show="mobileMenuOpen" x-transition class="md:hidden border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-navy-light">
-            <div class="px-4 py-3 space-y-2">
-                <a href="#home" @click="mobileMenuOpen = false" class="block px-3 py-2 rounded-lg text-sm font-medium text-navy dark:text-white hover:bg-slate-100 dark:hover:bg-navy transition">
-                    <span x-show="lang === 'id'">🏠 Beranda</span>
-                    <span x-show="lang === 'en'" x-cloak>🏠 Home</span>
-                </a>
-                <a href="#org" @click="mobileMenuOpen = false" class="block px-3 py-2 rounded-lg text-sm font-medium text-navy dark:text-white hover:bg-slate-100 dark:hover:bg-navy transition">
-                    <span x-show="lang === 'id'">🏢 Organisasi</span>
-                    <span x-show="lang === 'en'" x-cloak>🏢 Organizations</span>
-                </a>
-                <a href="#work" @click="mobileMenuOpen = false" class="block px-3 py-2 rounded-lg text-sm font-medium text-navy dark:text-white hover:bg-slate-100 dark:hover:bg-navy transition">
-                    <span x-show="lang === 'id'">💼 Pekerjaan</span>
-                    <span x-show="lang === 'en'" x-cloak>💼 Work</span>
-                </a>
-                <a href="#competition" @click="mobileMenuOpen = false" class="block px-3 py-2 rounded-lg text-sm font-medium text-navy dark:text-white hover:bg-slate-100 dark:hover:bg-navy transition">
-                    <span x-show="lang === 'id'">🏆 Lomba</span>
-                    <span x-show="lang === 'en'" x-cloak>🏆 Competition</span>
-                </a>
-                <a href="#contact" @click="mobileMenuOpen = false" class="block px-3 py-2 rounded-lg text-sm font-medium text-navy dark:text-white hover:bg-slate-100 dark:hover:bg-navy transition">
-                    <span x-show="lang === 'id'">📞 Kontak</span>
-                    <span x-show="lang === 'en'" x-cloak>📞 Contact</span>
-                </a>
-            </div>
-        </div>
+<!-- Mobile Menu -->
+<div x-show="mobileMenuOpen" x-transition class="md:hidden border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-navy-light">
+    <div class="px-4 py-3 space-y-2">
+
+        <a href="#home" @click="mobileMenuOpen = false" 
+        class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium text-navy dark:text-white hover:bg-slate-100 dark:hover:bg-navy transition">
+            <i class="fas fa-house text-gold"></i>
+            <span x-show="lang === 'id'">Beranda</span>
+            <span x-show="lang === 'en'" x-cloak>Home</span>
+        </a>
+
+
+        <a href="#org" @click="mobileMenuOpen = false" 
+        class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium text-navy dark:text-white hover:bg-slate-100 dark:hover:bg-navy transition">
+            <i class="fas fa-users text-gold"></i>
+            <span x-show="lang === 'id'">Organisasi</span>
+            <span x-show="lang === 'en'" x-cloak>Organizations</span>
+        </a>
+
+
+        <a href="#work" @click="mobileMenuOpen = false" 
+        class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium text-navy dark:text-white hover:bg-slate-100 dark:hover:bg-navy transition">
+            <i class="fas fa-briefcase text-gold"></i>
+            <span x-show="lang === 'id'">Pekerjaan</span>
+            <span x-show="lang === 'en'" x-cloak>Work</span>
+        </a>
+
+
+        <a href="#competition" @click="mobileMenuOpen = false" 
+        class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium text-navy dark:text-white hover:bg-slate-100 dark:hover:bg-navy transition">
+            <i class="fas fa-trophy text-gold"></i>
+            <span x-show="lang === 'id'">Lomba</span>
+            <span x-show="lang === 'en'" x-cloak>Competition</span>
+        </a>
+
+
+        <a href="#contact" @click="mobileMenuOpen = false" 
+        class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium text-navy dark:text-white hover:bg-slate-100 dark:hover:bg-navy transition">
+            <i class="fas fa-phone text-gold"></i>
+            <span x-show="lang === 'id'">Kontak</span>
+            <span x-show="lang === 'en'" x-cloak>Contact</span>
+        </a>
+
+    </div>
+</div>
     </nav>
 
     <!-- HERO SECTION -->
